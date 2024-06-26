@@ -93,6 +93,11 @@
   .mobile{
     display: none;
   }
+  @media(max-width: 1111px){
+    .infoContainer{
+      max-width: 586px;
+    }
+  }
   @media (max-width: 1024px) {
     .mobile{
       display:block;
