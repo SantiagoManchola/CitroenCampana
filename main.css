@@ -168,7 +168,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    padding-top: 100px;
   }
   @media (min-width: 1024px) {
     .form_index .containerMain {
@@ -184,6 +184,7 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
+    align-self: start;
   }
   .form_index .containerMain .form .info {
     width: 100%;
