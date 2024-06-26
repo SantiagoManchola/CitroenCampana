@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  section{
+    overflow: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #c0c0c0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #c0c0c0;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: white;
+  }
+  
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    padding: 0 !important;
+    background: linear-gradient(to right, #c4c4c4, #ffffff);
+  }
+
+  header{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    background-image: url('./assets/bg.webp');
+    background-repeat: no-repeat;
+    max-height: 130px;
+    background-size: cover;
+  }
+  header img{
+    padding: 10px 20%;
+  }
+  .blueCar{
+    max-width: 60vw;
+  }
+  .legalContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .legalContainer img{
+    max-width: 393px;
+  }
+  .infoContainer{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+    bottom: 10px;
+    left: 12%;
+  }
+  .suzukiImg{
+    max-height: 52px;
+    width: auto;
+  }
+  @media(max-width:1425px){
+    .infoContainer{
+      left: 2% !important;
+      gap: 10px;
+    }
+    .legalContainer{
+      max-width: 400px;
+    }
+    .form_index .containerMain .form {
+      padding: 2% !important;
+    }
+  }
+  .mobile{
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .mobile{
+      display:block;
+    }
+    .desktop{
+      display: none;
+    }
+    .titleImg{
+        width: 50%;
+    }
+    .form_index .containerMain .form{
+        padding: 0 10% !important;
+    }
+    .form_index .containerMain .form .info{
+        background-color: white;
+        border: none;
+    }
+    .containerMain{
+        position: relative;
+        min-width: 100%;
+        background-size: cover;
+        object-position: top;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+    }
+    
+    .containerMain > * {
+        position: relative;
+        z-index: 2;
+    }
+    .legal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .legal p{
+        color: black;
+    }
+    .legal p a{
+        color: black   !important;
+    }
+    .itemsImg{
+        margin-top: 10px;
+    }
+
+    .infoContainer{
+      flex-direction: column;
+      align-items: end;
+      margin-top: 20px;
+      left: 0 !important;
+      padding-right: 10px;
+    }
+    .suzukiImg{
+      max-width: 50%;
+    }
+    .legalContainer img{
+      max-width: 100%;
+    }
+
+  }
+
+  .form_index .containerMain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+  }
+  @media (min-width: 1024px) {
+    .form_index .containerMain {
+      grid-template-columns: repeat(2, 1fr);
+      height: calc(100vh - 130px);
+    }
+  }
+  .form_index .containerMain .form {
+    width: 100%;
+    max-width: 100rem;
+    margin-left: auto;
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .form_index .containerMain .form .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 3px solid black;
+    border-radius: 24px;
+    padding: 2%;
+  }
+  .form_index .containerMain .form .praco {
+    max-height: 78px;
+    max-width: 279px;
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  .form_index .containerMain .form .info .container_input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.675rem;
+    position: relative;
+    font-size: 15px;
+  }
+  .form_index .containerMain .form .info .container_input label {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .form_index .containerMain .form .info .container_input label.error {
+    position: absolute;
+    top: auto;
+    bottom: -1rem;
+    font-size: 0.675rem !important;
+    left: 1rem;
+    color: red;
+  }
+  .form_index .containerMain .form .info .container_input input {
+    padding: 0.675rem 1.25rem;
+    border: #ACACAC solid 1px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+  .form_index .containerMain .form .info .container_input select {
+    padding: 0.675rem 1.25rem;
+    border: #ACACAC solid 1px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+  .form_index .containerMain .form .info .container_input #cities {
+    padding: 0.675rem 1.25rem;
+    border: #ACACAC solid 1px;
+    border-radius: 999px;
+  }
+  @media (min-width: 1024px) {
+    .form_index .containerMain .form .info .container_input #cities {
+      max-width: 230px;
+    }
+  }
+  .form_index .containerMain .form .info .container_input textarea {
+    padding: 0.675rem 1.25rem;
+    border: #ACACAC solid 1px;
+    width: 100%;
+    resize: none;
+    min-height: 7.125rem;
+    font-size: 15px;
+  }
+  .form_index .containerMain .form .info .group_inputs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+  @media (min-width: 1024px) {
+    .form_index .containerMain .form .info .group_inputs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .form_index .containerMain .form .info .text_terms {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.675rem;
+    max-height: 8rem;
+    overflow-y: auto;
+  }
+  @media (min-width: 1024px) {
+    .form_index .containerMain .form .info .text_terms {
+      max-height: 4.6rem;
+    }
+  }
+  .form_index .containerMain .form .info .text_terms p {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+  .form_index .containerMain .form .info .text_terms::-webkit-scrollbar {
+    width: 4px;
+    background-color: #c0c0c0;
+  }
+  .form_index .containerMain .form .info .text_terms::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #FF3142;
+  }
+  .form_index .containerMain .form .info .text_terms::-webkit-scrollbar-track {
+    border-radius: 0.675rem;
+    background-color: white;
+  }
+  .form_index .containerMain .form .info .double_check {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .form_index .containerMain .form .info .double_check div {
+    display: flex;
+  }
+  .form_index .containerMain .form .info .double_check div input[type=radio] {
+    display: none;
+  }
+  .form_index .containerMain .form .info .double_check div input[type=radio] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .form_index .containerMain .form .info .double_check div input[type=radio] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: #bd1518 2px solid;
+  }
+  .form_index .containerMain .form .info .double_check div input[type=radio]:checked + label:before {
+    background-color: #F20005;
+  }
+  .form_index .containerMain .form .info button {
+    padding: 20px 60px;
+    background-color: #F20005;
+    border-radius: 0.9rem;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    align-self: center;
+  }
+  @media (min-width: 1024px) {
+    .form_index .containerMain .form .info button {
+      width: max-content;
+    }
+  }
+  
+  .modal_terms .swal2-actions button {
+    padding: 0.675rem 2.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.875rem;
+    background: #bd1518;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  .modal_terms .swal2-actions button:focus {
+    box-shadow: 0 0 0 3px rgba(189, 21, 24, 0.5);
+  }
+  .modal_terms .containerMain h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 0 1.25rem;
+  }
+  .modal_terms .containerMain p {
+    text-align: justify;
+    margin: 0 0 0.675rem;
+    font-size: 0.875rem;
+  }
+
+.legal p{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.legal p a{
+    color: black;
+}

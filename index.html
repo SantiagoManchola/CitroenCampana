@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <meta name="description" content="Praco Didacol | Grupo Inchcape">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+        <meta property="og:title" content="Praco Didacol | Grupo Inchcape"/>
+        <!-- <meta property="og:description" content=""/>
+        <meta property="og:image" content="" />
+        <meta property=”og:url” content="" />  -->
+
+        <title>Praco Didacol | Grupo Inchcape</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/derco.webp" alt="derco">
+    </header>
+    <section class="form_index" id="contact_us">
+        <div class="containerMain">
+            <img class="blueCar" src="./assets/img.png" alt="whiteCar">
+            <img class="suzukiImg mobile" src="./assets/citroen.png" alt="subaru">
+            <form id="form-contact" class="form">
+                <div class="info">
+                    <div class="container_input">
+                        <input type="text" id="names" name="names" placeholder="Nombre Completo">
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="email" name="email" placeholder="Correo Electronico">
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="number" name="number" placeholder="Número Celular">
+                    </div>
+                    <div class="container_input">
+                        <label for="subject">Como desea ser contactado</label>
+                        <select name="subject" id="subject">
+                            <option value="" disabled selected>Selecciona</option>
+                            <option value="telefono">Teléfono</option>
+                            <option value="whatsapp">Whatsapp</option>
+                        </select>
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="modelo" name="modelo" placeholder="Modelo">
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="tiempo" name="tiempo" placeholder="Tiempo para estrenar tu carro">
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="presupuesto" name="presupuesto" placeholder="Presupuesto">
+                    </div>
+                    <div class="container_input">
+                        <input type="text" id="message" name="message" placeholder="Observaciones"></input>
+                    </div>
+                    <div class="double_check">
+                        <div>
+                            <input type="radio" value='on' name="yes" id="yesCheckbox">
+                            <label for="yesCheckbox">Acepta el Tratamiento de Datos y Política de Privacidad.</label>
+                        </div>
+                        <div style="display: none;">
+                            <input type="radio" value='off' name="no" id="noCheckbox">
+                            <label for="noCheckbox">No autorizo</label>
+                        </div>
+                    </div>
+                    <button id="send" type="submit">Enviar</button>
+                </div>
+            </form> 
+            <div class="infoContainer">
+                <img class="suzukiImg desktop" src="./assets/citroen.png" alt="subaru">
+                <div class="legalContainer">
+                    <img class="itemsImg" src="./assets/items.png" alt="items">
+                    <div class="legal">
+                        <p>
+                            *Imagen de referencia corresponde a un SUV C4 Cactus Modelo 2024, para más información consulta a tu asesor de preferencia o visita <a href="https://www.dercocenter.com.co/" target="_blank">www.dercocenter.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
